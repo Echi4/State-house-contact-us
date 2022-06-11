@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+section
+{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #900C3F;
+}
+
+section::before
+{
+    content: '';
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #4F313C ;
+}
+
+.container
+{
+    position: relative;
+    min-width: 1100;
+    min-height: 200;
+    display: flex;
+    z-index: 1000;
+    
+}
+
+.container .contactInfo
+{
+    position: inherit;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: #292526;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .contactInfo h4 
+{
+    color: #ffffff;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.container .contactInfo ul.info
+{
+    position: relative;
+    margin: 20px 0;
+
+}
+
+.container .contactInfo ul.info li
+{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;    
+}
+
+.container .contactInfo ul.info .infoData
+{
+    color: #ffffff;
+}
+
+.container .contactInfo ul.info li span:nth-child(1)
+{
+    width: 30px;
+    min-width: 30px;
+}
+
+.container .contactInfo ul.info li span:nth-child(1) img
+{
+    max-width: 100%;
+    filter: invert(1);
+    font-weight: 1000;
+}
+
+.container .contactInfo ul.info li span:nth-child(2)
+{
+    color: #ffffff;
+    margin-left: 10px;
+    font-weight: 800;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.social-list__item {
+    margin: 0 .5em;
+    color: #ffffff;
+}
+
+.social-list__link {
+    padding: .5em;
+    color: #ffffff;
+}
+
+.container .contactForm
+{
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 150px;
+    width: calc(100% - 150px);
+    height: 100%;
+    background: #4F313C;
+}
